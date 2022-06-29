@@ -2,6 +2,8 @@
 * {
   box-sizing: border-box;
   font-family: "Red Hat Text", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -9,6 +11,7 @@ body {
   height: 100vh;
 }
 body .container {
+  padding-top: 20vh;
   text-transform: uppercase;
   display: flex;
   text-align: center;
@@ -20,16 +23,18 @@ body .container h2 {
   color: #fcfcfc;
 }
 body .container .modal {
-  display: grid;
-  gap: 10vw;
-  grid-template-columns: repeat(4, 3vw);
+  padding-top: 5vh;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
 }
 body .container .values {
-  margin-top: 4vh;
-  padding: 4em;
+  font-size: 46px;
+  padding: 40px;
   background: #000;
   color: #d1516f;
-  margin-bottom: 2vh;
+  height: 20px;
+  margin: 20px;
 }
 body .container .top-half {
   background: #2c2c44;

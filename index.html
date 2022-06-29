@@ -3,38 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
     <link rel="stylesheet" href="./scss/styles.css" />
+    <script src="app.js" defer></script>
 
     <title>Frontend Mentor | Launch countdown timer</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style></style>
   </head>
   <body>
     <div class="container">
       <h2>We're launching soon</h2>
       <div class="modal">
         <div class="day card">
-          <div class="values val1">14</div>
+          <div class="top-part"><div class="values" id="day">14</div></div>
+          <div class="bottom-part"><div class="values" id="day">14</div></div>
           <div class="days time">Days</div>
         </div>
         <div class="hour card">
-          <div class="values val2">14</div>
+          <div class="top-part"><div class="values" id="hour">14</div></div>
+          <div class="bottom-part"><div class="values" id="day">14</div></div>
           <div class="hours time">Hours</div>
         </div>
         <div class="minute card">
-          <div class="values val3">14</div>
+          <div class="top-part"><div class="values" id="minute">14</div></div>
+          <div class="bottom-part"><div class="values" id="day">14</div></div>
           <div class="mints time">Minutes</div>
         </div>
         <div class="seconds card">
-          <div class="values val4">14</div>
+          <div class="top-part"><div class="values" id="second">14</div></div>
+          <div class="bottom-part"><div class="values" id="day">14</div></div>
           <div class="secs time">Seconds</div>
         </div>
       </div>
     </div>
+    <!-- <div class="socials">
+      <ul>
+        <li><img src="./images/icon-github.svg" alt="github logo" /></li>
+        <li><img src="./images/icon-linkedin.svg" alt="linkedin logo" /></li>
+        <li><img src="./images/icon-master.svg" alt="potfolio logo" /></li>
+      </ul>
+    </div> -->
 
     <footer>
       <div class="attribution">
