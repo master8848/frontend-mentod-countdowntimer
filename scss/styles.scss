@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+$height: 150px;
+
 // reset
 * {
   box-sizing: border-box;
@@ -21,17 +23,18 @@ body {
     text-align: center;
     flex-direction: column;
     margin: auto;
-    width: 50vw;
-
+    width: 70vw;
+    box-sizing: border-box;
     h2 {
       color: #fcfcfc;
     }
 
     .modal {
       padding-top: 5vh;
-      display: flex;
+      display: inline-flex;
       text-align: center;
       justify-content: space-between;
+
       //   display: grid;
 
       //   gap: 10vw;
@@ -41,22 +44,29 @@ body {
 
     .values {
       font-size: 46px;
-      padding: 40px;
-      background: #000;
+
+      // background: #000;
       color: #d1516f;
-      height: 20px;
-      margin: 20px;
+      z-index: 5;
     }
 
-    .card {
-    }
-
-    .top-half {
+    .top-part {
       background: #2c2c44;
+      margin-top: 20px;
+      padding: 40px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      width: 150px;
+      height: $height;
+      box-sizing: border-box;
     }
-
-    .bottom-half {
+    .lower {
+      transform: translateY(-(calc($height / 2)));
+      content: "";
       background: #34364f;
+      width: 150px;
+      height: calc($height/ 2);
     }
 
     .time {
@@ -80,5 +90,48 @@ footer {
 
   .attribution a {
     color: hsl(228, 45%, 44%);
+  }
+}
+@media (max-width: 900px) {
+  $height: 100px;
+  .values {
+    font-size: 20px !important;
+  }
+
+  .top-part {
+    width: 120px !important;
+    height: $height !important;
+  }
+  .lower {
+    width: 120px !important;
+    height: calc($height/ 2) !important;
+    transform: translateY(-(calc($height / 2))) !important;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    padding-top: 0px !important ;
+  }
+  .modal {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    flex-direction: column;
+  }
+  .top-part,
+  .lower {
+    margin: auto;
+  }
+  .top-part {
+    height: 40px !important;
+    margin-top: 5px !important;
+  }
+  .lower {
+    display: none;
+  }
+}
+@media (max-height: 500px) {
+  footer {
+    position: relative !important;
+    text-align: center !important;
   }
 }
