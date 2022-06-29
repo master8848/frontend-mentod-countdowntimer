@@ -131,6 +131,10 @@ footer .attribution a {
   .lower {
     display: none;
   }
+
+  .socials > ul {
+    margin-top: 5px !important;
+  }
 }
 @media (max-height: 500px) {
   footer {
